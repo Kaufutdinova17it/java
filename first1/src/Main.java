@@ -333,19 +333,19 @@ public class Main {
         int[] arr = new int[length];
         System.out.println("Введите элементы массива: ");
 
-        // 1. Сначала заполняем весь массив
+        
         for (int i = 0; i < length; i++) {
             arr[i] = scanner.nextInt();
         }
 
-        // 2. Только после заполнения всего массива запрашиваем число для поиска
+        
         System.out.println("Введите число для поиска: ");
         int x = scanner.nextInt();
 
-        // 3. Вызываем метод поиска
+        
         int[] result4_9 = Fraction.findAll(arr, x);
 
-        // 4. Выводим результат
+        
         System.out.print("Индексы вхождений: [");
         for (int c = 0; c < result4_9.length; c++) {
             System.out.print(result4_9[c]);

@@ -112,18 +112,17 @@ public class Fraction
             return 1;
         }
 
-        // Используем математику для избежания переполнения
+       
         int count = 0;
         long num = x;
 
-        // Обрабатываем отрицательные числа без изменения знака
+        
         while (num != 0) {
             num /= 10;
             count++;
         }
 
-        // Если число было отрицательным, считаем знак "-" как отдельный символ?
-        // Но по условию задачи нужно считать только цифры
+
         return count;
     }
     public static void square(int x){
@@ -155,41 +154,41 @@ public class Fraction
         return -1;
     }
     public static int maxAbs(int[] arr) {
-        int maxAbsValue = arr[0]; // Начинаем с первого элемента
-        int maxAbs = Math.abs(arr[0]); // Модуль первого элемента
+        int maxAbsValue = arr[0]; 
+        int maxAbs = Math.abs(arr[0]); 
 
         for (int i = 1; i < arr.length; i++) {
             int currentAbs = Math.abs(arr[i]);
             if (currentAbs > maxAbs) {
                 maxAbs = currentAbs;
-                maxAbsValue = arr[i]; // Сохраняем само число, а не его модуль
+                maxAbsValue = arr[i]; 
             }
         }
 
         return maxAbsValue;
     }
     public static int[] add(int[] arr, int[] ins, int pos) {
-        // Обработка null
+        
         if (arr == null) arr = new int[0];
         if (ins == null) ins = new int[0];
 
-        // Корректировка позиции
+        
         if (pos < 0) pos = 0;
         if (pos > arr.length) pos = arr.length;
 
         int[] result = new int[arr.length + ins.length];
 
-        // Копируем первую часть
+        
         for (int i = 0; i < pos; i++) {
             result[i] = arr[i];
         }
 
-        // Вставляем новый массив
+        
         for (int i = 0; i < ins.length; i++) {
             result[pos + i] = ins[i];
         }
 
-        // Копируем оставшуюся часть
+        
         for (int i = pos; i < arr.length; i++) {
             result[ins.length + i] = arr[i];
         }
@@ -214,7 +213,7 @@ public class Fraction
             return new int[0];
         }
 
-        // 1. Подсчитываем количество вхождений
+        
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == x) {
