@@ -1,9 +1,9 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        Fraction Fraction = new Fraction();
         int number1;
         int number2;
         Scanner scanner = new Scanner(System.in);
@@ -120,6 +120,7 @@ public class Main {
 
 
     public static void task1_1(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.print("Введите вещественное число: ");
             double number = scanner.nextDouble();
@@ -132,6 +133,7 @@ public class Main {
     }
 
     public static void task1_3(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.print("Введите цифру (0-9): ");
             String input = scanner.next();
@@ -152,6 +154,7 @@ public class Main {
     }
 
     public static void task1_5(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите целое число:");
             int number1_5 = scanner.nextInt();
@@ -164,6 +167,7 @@ public class Main {
     }
 
     public static void task1_7(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите первую целую границу");
             int a = scanner.nextInt();
@@ -171,7 +175,7 @@ public class Main {
             int b = scanner.nextInt();
             System.out.println("Введите целое число,которое хотите проверить");
             int num = scanner.nextInt();
-            boolean result1_7 = Fraction.isInRange(a,b,num);
+            boolean result1_7 = Fraction.isInRange(a, b, num);
             System.out.println(result1_7);
         } catch (Exception e) {
             System.out.println("Ошибка! Введите целые числа.");
@@ -180,6 +184,7 @@ public class Main {
     }
 
     public static void task1_9(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите целое число a");
             int a = scanner.nextInt();
@@ -187,7 +192,7 @@ public class Main {
             int b = scanner.nextInt();
             System.out.println("Введите целое число c");
             int c = scanner.nextInt();
-            boolean result1_9 = Fraction.isEqual(a,b,c);
+            boolean result1_9 = Fraction.isEqual(a, b, c);
             System.out.println(result1_9);
         } catch (Exception e) {
             System.out.println("Ошибка! Введите целые числа.");
@@ -196,6 +201,7 @@ public class Main {
     }
 
     public static void task2_1(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите целое число:");
             int x = scanner.nextInt();
@@ -208,6 +214,7 @@ public class Main {
     }
 
     public static void task2_3(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите целое число:");
             int x = scanner.nextInt();
@@ -220,6 +227,7 @@ public class Main {
     }
 
     public static void task2_5(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите целое число x");
             int x = scanner.nextInt();
@@ -227,8 +235,8 @@ public class Main {
             int y = scanner.nextInt();
             System.out.println("Введите целое число z");
             int z = scanner.nextInt();
-            int result2_5 = Fraction.max3(x,y,z);
-            System.out.println("Максимальное из трех чисел:"+result2_5);
+            int result2_5 = Fraction.max3(x, y, z);
+            System.out.println("Максимальное из трех чисел:" + result2_5);
         } catch (Exception e) {
             System.out.println("Ошибка! Введите целые числа.");
             scanner.next();
@@ -236,12 +244,13 @@ public class Main {
     }
 
     public static void task2_7(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите первое целое число");
             int x = scanner.nextInt();
             System.out.println("Введите второе целое число");
             int y = scanner.nextInt();
-            int result2_7 = Fraction.sum2(x,y);
+            int result2_7 = Fraction.sum2(x, y);
             System.out.println("Вычесленное значение:" + result2_7);
         } catch (Exception e) {
             System.out.println("Ошибка! Введите целые числа.");
@@ -250,6 +259,7 @@ public class Main {
     }
 
     public static void task2_9(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите целое число от 1 до 7");
             int x = scanner.nextInt();
@@ -266,6 +276,7 @@ public class Main {
     }
 
     public static void task3_1(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите целое число");
             int x = scanner.nextInt();
@@ -282,6 +293,7 @@ public class Main {
     }
 
     public static void task3_3(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите целое число");
             int x = scanner.nextInt();
@@ -298,6 +310,7 @@ public class Main {
     }
 
     public static void task3_5(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите целое число");
             int x = scanner.nextInt();
@@ -310,6 +323,7 @@ public class Main {
     }
 
     public static void task3_7(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите целое число");
             int x = scanner.nextInt();
@@ -325,6 +339,7 @@ public class Main {
     }
 
     public static void task3_9(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите целое число");
             int x = scanner.nextInt();
@@ -340,6 +355,7 @@ public class Main {
     }
 
     public static void task4_1(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите длину массива: ");
             int length = scanner.nextInt();
@@ -354,7 +370,7 @@ public class Main {
             }
             System.out.println("Введите число для поиска: ");
             int x = scanner.nextInt();
-            int result4_1 = Fraction.findFirst(arr,x);
+            int result4_1 = Fraction.findFirst(arr, x);
             System.out.println("Индекс первого вхождения: " + result4_1);
         } catch (Exception e) {
             System.out.println("Ошибка ввода! Проверьте данные.");
@@ -363,6 +379,7 @@ public class Main {
     }
 
     public static void task4_3(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите длину массива: ");
             int length = scanner.nextInt();
@@ -384,6 +401,7 @@ public class Main {
     }
 
     public static void task4_5(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите длину первого массива: ");
             int lengthArr = scanner.nextInt();
@@ -432,6 +450,7 @@ public class Main {
     }
 
     public static void task4_7(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите длину массива: ");
             int length = scanner.nextInt();
@@ -460,6 +479,7 @@ public class Main {
     }
 
     public static void task4_9(Scanner scanner) {
+        Fraction Fraction = new Fraction();
         try {
             System.out.println("Введите длину массива: ");
             int length = scanner.nextInt();
@@ -490,3 +510,5 @@ public class Main {
             scanner.next();
         }
     }
+}
+
