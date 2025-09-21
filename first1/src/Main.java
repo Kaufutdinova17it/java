@@ -1,3 +1,5 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Scanner;
 
 public class Main {
@@ -16,18 +18,23 @@ public class Main {
                 number2 = scanner.nextInt();
                 switch (number2) {
                     case 1:
+                        System.out.println("1-Возвращение дробной части числа X");
                         task1_1(scanner);
                         break;
                     case 3:
+                        System.out.println("2-Вычисление числа через код ASCII");
                         task1_3(scanner);
                         break;
                     case 5:
+                        System.out.println("3-Возвращение 'True',если число x двузначное");
                         task1_5(scanner);
                         break;
                     case 7:
+                        System.out.println("4-Возвращение 'True',если x входит в указанный диапазон");
                         task1_7(scanner);
                         break;
                     case 9:
+                        System.out.println("5-Возвращение 'True,если три числа x, y, z равны ");
                         task1_9(scanner);
                         break;
                     default:
@@ -41,18 +48,23 @@ public class Main {
                 number2 = scanner.nextInt();
                 switch (number2) {
                     case 1:
+                        System.out.println("6-Возвращение  модуля числа x");
                         task2_1(scanner);
                         break;
                     case 3:
+                        System.out.println("7-Возвращение 'True',если число x делится нацело на 3 или 5." + "'False' - делится и на 3, и на 5.");
                         task2_3(scanner);
                         break;
                     case 5:
+                        System.out.println("8-Возвращение максимального из трех полученных чисел x, y, z");
                         task2_5(scanner);
                         break;
                     case 7:
+                        System.out.println("9-Возвращение суммы двух чисел x и y");
                         task2_7(scanner);
                         break;
                     case 9:
+                        System.out.println("10-Возвращение строки, которая будет обозначать текущий день недели");
                         task2_9(scanner);
                         break;
                     default:
@@ -66,18 +78,23 @@ public class Main {
                 number2 = scanner.nextInt();
                 switch (number2) {
                     case 1:
+                        System.out.println("11-Возвращение строки, в которой будут записаны все числа от 0 до x");
                         task3_1(scanner);
                         break;
                     case 3:
+                        System.out.println("12-Возвращение строки, в которой будут записаны все четные числа от 0 до x");
                         task3_3(scanner);
                         break;
                     case 5:
+                        System.out.println("13-Возвращение количества знаков в числе x.");
                         task3_5(scanner);
                         break;
                     case 7:
+                        System.out.println("14-Вывод на экран квадрата из символов ‘*’ размером x на x");
                         task3_7(scanner);
                         break;
                     case 9:
+                        System.out.println("15-Вывод на экран + треугольника из символов ‘*’ у которого X символов в высоту,а количество символов в ряду совпадает с номером строки");
                         task3_9(scanner);
                         break;
                     default:
@@ -91,18 +108,23 @@ public class Main {
                 number2 = scanner.nextInt();
                 switch (number2) {
                     case 1:
+                        System.out.println("16-Возвращение индекса первого вхождения числа x в массив ");
                         task4_1(scanner);
                         break;
                     case 3:
+                        System.out.println("17-Возвращение наибольшего по модулю значения массива");
                         task4_3(scanner);
                         break;
                     case 5:
+                        System.out.println("18-Возвращение нового массива, который будет содержать все элементы массива ");
                         task4_5(scanner);
                         break;
                     case 7:
+                        System.out.println("19-Возвращение нового массива, в котором значения массива записаны задом наперед");
                         task4_7(scanner);
                         break;
                     case 9:
+                        System.out.println("20 - Возвращение нового массива, в котором записаны индексы всех вхождений");
                         task4_9(scanner);
                         break;
                     default:
