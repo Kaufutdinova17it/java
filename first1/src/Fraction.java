@@ -2,15 +2,14 @@ public class Fraction
 {
     public  double fraction(double x) {
 
-
         int wholePart = (int) x;
-        return x - wholePart;
+        double fractional=x - wholePart;
+        return Math.round(fractional * 1000.0) / 1000.0;//округляем до целого и "отщипываем последние 3 цифры"
     }
-    public  int charToNum(char x){
+    public  int charToNum(char x) {
         if (x>= '0' && x <= '9') {
             return x - '0';
-        }
-        else {
+        } else {
             System.out.println("Ошибка: символ не является цифрой");
             return -1;
         }
@@ -170,23 +169,22 @@ public class Fraction
         if (arr == null) arr = new int[0];
         if (ins == null) ins = new int[0];
 
-
         if (pos < 0) pos = 0;
         if (pos > arr.length) pos = arr.length;
 
         int[] result = new int[arr.length + ins.length];
 
-
+        //копирование первой части исходного массива
         for (int i = 0; i < pos; i++) {
             result[i] = arr[i];
         }
 
-
+        //вставка нового массива
         for (int i = 0; i < ins.length; i++) {
             result[pos + i] = ins[i];
         }
 
-
+        //вторая часть исходного массива
         for (int i = pos; i < arr.length; i++) {
             result[ins.length + i] = arr[i];
         }
@@ -201,6 +199,7 @@ public class Fraction
         int[] result = new int[arr.length];
 
         for (int i = 0; i < arr.length; i++) {
+            //длинна массива - 1 - номер итерации
             result[i] = arr[arr.length - 1 - i];
         }
 
@@ -211,7 +210,7 @@ public class Fraction
             return new int[0];
         }
 
-
+        //считаю кол-во вхождений
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == x) {
@@ -219,10 +218,10 @@ public class Fraction
             }
         }
 
-
         int[] result = new int[count];
         int resultIndex = 0;
 
+        //заполняю массив индексами
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == x) {
                 result[resultIndex] = i;
@@ -232,8 +231,5 @@ public class Fraction
 
         return result;
     }
-
-
-
-
+    
 }
