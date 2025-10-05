@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main {
@@ -92,7 +93,7 @@ public class Main {
                         task3_7(scanner);
                         break;
                     case 9:
-                        System.out.println("15-Вывод на экран + треугольника из символов ‘*’ у которого X символов в высоту,а количество символов в ряду совпадает с номером строки");
+                        System.out.println("15-Вывод на экран треугольника из символов ‘*’ у которого X символов в высоту,а количество символов в ряду совпадает с номером строки");
                         task3_9(scanner);
                         break;
                     default:
@@ -122,7 +123,7 @@ public class Main {
                         task4_7(scanner);
                         break;
                     case 9:
-                        System.out.println("20 - Возвращение нового массива, в котором записаны индексы всех вхождений");
+                        System.out.println("20 - Возвращение нового массива, в котором записаны индексы всех вхождений числа x");
                         task4_9(scanner);
                         break;
                     default:
@@ -145,7 +146,7 @@ public class Main {
             System.out.print("Введите вещественное число: ");
             double number = scanner.nextDouble();
             double result1_1 = Fraction.fraction(number);
-            System.out.println("Дробная часть: " + result1_1);
+            System.out.println("Дробная часть(три знака после запятой): " + result1_1);
         }
 
 
@@ -472,4 +473,3 @@ public class Main {
 
     }
 }
-
