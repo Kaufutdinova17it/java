@@ -32,13 +32,36 @@ public class Main {
         Point line1Start = new Point(1, 3);
         Point line1End = new Point(23, 8);
         Line line1 = new Line(line1Start, line1End);
+
         // 2.2 Линия 2, горизонтальная, на высоте 10,от точки 5 до точки 25
         Point line2Start = new Point(5, 10);
         Point line2End = new Point(25, 10);
         Line line2 = new Line(line2Start, line2End);
+
         // 2.3 Линия 3, которая начинается там же, где линия 1 и заканчивается там же, где линия 2
         Line line3 = new Line(line1.getStart(), line2.getEnd());
         System.out.println("2.1-2.3, выводим линии: ");
+        System.out.println(line1);
+        System.out.println(line2);
+        System.out.println(line3);
+        // 2.4 Изменяем координаты 1 и 2 линии, но чтобы координаты 3 линии соответствовали 3 пункту
+        line1Start = new Point(1, 18);
+        line2End = new Point(15, 10);
+
+        line1 = new Line(line1Start, line1End);
+        line2 = new Line(line2Start, line2End);
+        line3 = new Line(line1.getStart(), line2.getEnd());
+
+        System.out.println("2.4, после изменения координат 1 и 2 линии: ");
+        System.out.println(line1);
+        System.out.println(line2);
+        System.out.println(line3);
+
+        // 2.5 Измените координаты 1 линии так, чтобы при этом не изменились, координаты 3 линии
+        line1Start = new Point(1, 18);
+        line1End = new Point(-7, 5);
+        line1 = new Line(line1Start, line1End);
+        System.out.println("2.5, после измнения координат 1 линии: ");
         System.out.println(line1);
         System.out.println(line2);
         System.out.println(line3);
