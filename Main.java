@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class Main {
@@ -6,7 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         try {
-            System.out.println("=== ДЕМОНСТРАЦИЯ РАБОТЫ ВСЕХ КЛАССОВ И МЕТОДОВ ===\n");
+
 
             // Задание 1.1 - Обобщенная коробка
             demonstrateBox(scanner);
@@ -159,7 +158,7 @@ public class Main {
     }
 
     private static void demonstrateReduce(Scanner scanner) {
-        System.out.println("3.3 ДЕМОНСТРАЦИЯ СОКРАЩЕНИЯ (REDUCE):");
+        System.out.println("3.3 ДЕМОНСТРАЦИЯ СОКРАЩЕНИЯ :");
 
         // 1. Конкатенация строк
         System.out.println("\n3.3.1 Конкатенация строк:");
@@ -218,6 +217,7 @@ public class Main {
         List<String> strings1 = readStringList(scanner, "Введите строки через запятую: ");
         Map<Integer, List<String>> lengthGroups = GenericUtils.collect(
                 strings1,
+                //создаем пустую Hashmap для результатов
                 HashMap::new,
                 (map, str) -> {
                     int length = str.length();
@@ -234,6 +234,7 @@ public class Main {
         while (true) {
             try {
                 System.out.print(prompt);
+                //Integer.parseInt() - преобразует строку в число
                 return Integer.parseInt(scanner.nextLine().trim());
             } catch (NumberFormatException e) {
                 System.out.println("Ошибка: введите корректное целое число!");
@@ -255,6 +256,7 @@ public class Main {
                 String[] parts = input.split(",");
                 List<Integer> result = new ArrayList<>();
                 for (String part : parts) {
+                    //Integer.parseInt() - преобразование строки в число
                     result.add(Integer.parseInt(part.trim()));
                 }
                 return result;
@@ -268,15 +270,17 @@ public class Main {
     private static List<String> readStringList(Scanner scanner, String prompt) {
         while (true) {
             System.out.print(prompt);
+            //trim() удаляет пробелы в начале и в конце строки
             String input = scanner.nextLine().trim();
             if (input.isEmpty()) {
                 System.out.println("Ошибка: ввод не может быть пустым!");
                 continue;
             }
-
+            //разбиваем строку по ,
             String[] parts = input.split(",");
             List<String> result = new ArrayList<>();
             for (String part : parts) {
+                //удаляем пробелы вокруг каждой подстроки и добавляем очищенную строку в список
                 result.add(part.trim());
             }
             return result;
