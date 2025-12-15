@@ -91,10 +91,10 @@ public class Main {
 
         F.addPath(B, 1);
 
-        // С помощью нового конструктора
-        //        D.addPath(A, 6);
-        //        A.addPath(D, 6);
-        //        A.addPath(F, 1);
+//        // С помощью нового конструктора
+//                D.addPath(A, 6);
+//                A.addPath(D, 6);
+//                A.addPath(F, 1);
 
         Map<City, Integer> pathsForD = new HashMap<>();
         pathsForD.put(A, 6);
