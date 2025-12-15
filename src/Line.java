@@ -16,13 +16,8 @@ public class Line {
     public Point getEnd() {
         return end;
     }
-    public int length() {
-        double deltaX = end.getX() - start.getX();
-        double deltaY = end.getY() - start.getY();
-        return (int) Math.round(Math.sqrt(deltaX * deltaX + deltaY * deltaY));//вычисляю длину линии по теореме пифагора
-    }
+
     @Override
     public String toString() {
         return "Линия от " + start + " до " + end;
     }
-}
