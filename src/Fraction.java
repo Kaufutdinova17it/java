@@ -35,7 +35,7 @@ public class Fraction {
         }
     }
 
-    // Метод для упрощения дроби
+    // Метод для упрощения дроби(НОД)
     private void simplify() {
         int gcd = gcd(numerator, denominator);
         numerator /= gcd;
@@ -94,6 +94,7 @@ public class Fraction {
 
     // Сложение с целым числом
     public Fraction sum(int other) {
+
         return this.sum(new Fraction(other, 1));
     }
 
@@ -104,6 +105,7 @@ public class Fraction {
 
     // Умножение на целое число
     public Fraction multiply(int other) {
+
         return new Fraction(this.numerator * other, this.denominator);
     }
 
