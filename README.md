@@ -50,7 +50,8 @@
 
  **Тест программы**
 
- -<img width="507" height="481" alt="image" src="https://github.com/user-attachments/assets/eeecf55e-e195-471b-bf20-c2d0c221048d" />
+ -<img width="358" height="108" alt="image" src="https://github.com/user-attachments/assets/bb1a6d79-d30b-4083-aec1-82be87618912" />
+
 
 
 ---
@@ -85,6 +86,10 @@
   - Линия 2: горизонтальная от (5;10) до (25;10)
   - Линия 3: от начала линии 1 до конца линии 2
 - Линии выводятся с их описанием
+
+**Тест программы**
+
+-<img width="440" height="327" alt="image" src="https://github.com/user-attachments/assets/0d99a937-11d9-466b-bbff-dc0ad4d4b98e" />
 
 ---
 
